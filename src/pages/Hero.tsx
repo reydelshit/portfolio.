@@ -1,4 +1,5 @@
 import Profile from '@/assets/ang.jpg';
+import AnggDark from '@/assets/angg.jpg';
 import { FaInstagram } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
 import { MdOutlineMail } from 'react-icons/md';
@@ -29,7 +30,7 @@ const SocialLinks = [
     icon: <TiSocialLinkedin className="text-xl text-secondary group-hover:text-main" />,
   },
 ];
-const Hero = () => {
+const Hero = ({ theme }: { theme: string }) => {
   return (
     <section className="flex justify-between md:gap-2 h-fit md:items-center items-start ">
       <div className="w-[80%]">
@@ -56,11 +57,19 @@ const Hero = () => {
       </div>
 
       <div className="flex md:justify-center justify-end mt-[3rem] md:mt-0">
-        <img
-          className="md:w-[100px] md:h-[100px] w-[90px] h-[90px] rounded-full object-cover block "
-          src={Profile}
-          alt="profile_image"
-        />
+        {theme === 'light' ? (
+          <img
+            className="md:w-[100px] md:h-[100px] w-[90px] h-[90px] rounded-full object-cover block "
+            src={Profile}
+            alt="profile_image"
+          />
+        ) : (
+          <img
+            className="md:w-[100px] md:h-[100px] w-[90px] h-[90px] rounded-full object-cover block "
+            src={AnggDark}
+            alt="profile_image"
+          />
+        )}
       </div>
     </section>
   );

@@ -80,7 +80,7 @@ function App() {
         </div>
       )}
       <div className="max-w-[672px] mx-auto relative z-10">
-        <Hero />
+        <Hero theme={theme} />
         <About />
         <Experience />
         <Education />
