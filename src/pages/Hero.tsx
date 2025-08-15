@@ -1,4 +1,4 @@
-import Profile from '@/assets/low qual.png';
+import Profile from '@/assets/ang.jpg';
 import { FaInstagram } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
 import { MdOutlineMail } from 'react-icons/md';
@@ -36,8 +36,8 @@ const Hero = () => {
         <h1 className="font-bold text-lg md:text-3xl">Reydel Ocon</h1>
         <p className="text-xs md:text-sm leading-[20px] font-family-secondary text-secondary my-1 text-wrap w-full">
           Experienced Full Stack Developer with a strong background in building scalable web
-          applications and leading technical teams. Skilled in React, TypeScript, and Node.js, with
-          a focus on delivering high-quality, user-friendly solutions.
+          applications — and the last <strong>Airbender</strong>. I primarily work with React,
+          TypeScript, and Node.js, focusing on delivering high-quality, user-friendly solutions.
         </p>
         <span className="text-accent text-[10px] md:text-xs">Gensan, Philippines</span>
         <div className=" mt-2">
