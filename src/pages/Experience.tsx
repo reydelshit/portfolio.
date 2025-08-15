@@ -7,7 +7,7 @@ const Experience = () => {
 
       <div className="flex flex-col gap-2">
         {WorkExperiences.map((experience, index) => (
-          <div key={index}>
+          <div className="mb-4" key={index}>
             <div className="flex flex-col md:flex-row md:justify-between  md:items-center mb-1 w-full">
               <h1 className="font-bold text-sm md:text-md">
                 {experience.title}{' '}

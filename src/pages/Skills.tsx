@@ -21,7 +21,7 @@ const Skills = ({ theme }: { theme: string }) => {
             key={index}
             className={`text-xs leading-[20px] font-family-secondary  ${
               theme === 'dark' ? 'bg-white text-main' : 'bg-neutral-800 text-gray-300'
-            } px-2 rounded-md md:text-sm  font-semibold`}
+            } px-2 rounded-md md:text-sm  `}
           >
             {skill}
           </li>

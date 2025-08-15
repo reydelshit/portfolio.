@@ -20,7 +20,7 @@ function App() {
         theme === 'dark' ? 'text-white' : 'text-main '
       } `}
     >
-      <div className="absolute top-4 right-4 z-50">
+      <div className="fixed top-4 right-4 z-50">
         {theme === 'light' ? (
           <button className="cursor-pointer" onClick={toggleDarkMode} type="button">
             <span className="group inline-flex shrink-0 justify-center items-center size-9">
