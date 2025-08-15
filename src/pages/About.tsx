@@ -7,7 +7,7 @@ const About = () => {
           Highly motivated and skilled Full Stack Developer with over <strong>two years</strong> of
           experience in developing and deploying web applications. I am an inquisitive person who
           asks, asks, asks which might be annoying, but yeah, sorry. I’m also a guy who enjoys his
-          beer and cigars without those, productivity lessens.
+          beer and cigars without those, my productivity lessens.
         </p>
       </div>
     </section>
