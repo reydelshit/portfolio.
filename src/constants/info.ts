@@ -25,7 +25,7 @@ export const WorkExperiences = [
     title: 'Chief Technology Officer',
     company: 'Ommu - Startup Company',
     type: 'Full-time',
-    duration: 'Oct 2024 - Present',
+    duration: 'Oct 2024 - June 2025',
     location: 'Gensan, Philippines',
     responsibilities:
       'Lead the development and technical strategy of the startup, overseeing product architecture and system design. Serve as the primary developer, building and deploying scalable solutions for both internal projects and client needs. Collaborate with stakeholders to define business requirements and translate them into fully functional applications.',
@@ -34,7 +34,7 @@ export const WorkExperiences = [
     title: 'Full Stack Developer',
     company: 'Freelancer',
     type: 'Freelance',
-    duration: 'Dec 2022 - Present',
+    duration: 'Dec 2022 - June 2025',
     location: 'Remote',
     responsibilities:
       'Developed and deployed full-stack applications for capstone projects, industry-level solutions, and local businesses. Worked closely with clients to gather requirements, create wireframes, and develop customized solutions. Provided ongoing maintenance, debugging, and optimization to ensure system reliability.',
