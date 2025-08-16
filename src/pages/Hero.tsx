@@ -9,42 +9,42 @@ const SocialLinks = [
   {
     platform: 'Email',
     url: 'mailto:reydelocon.dev@gmail.com?subject=hello&body=reydel!',
-    icon: <MdOutlineMail className="inline-flex text-xl text-secondary group-hover:text-main" />,
+    icon: <MdOutlineMail className="text-secondary group-hover:text-main inline-flex text-xl" />,
   },
 
   {
     platform: 'Instagram',
     url: 'https://www.instagram.com/reydelshit/',
-    icon: <FaInstagram className="inline-flex text-xl text-secondary group-hover:text-main" />,
+    icon: <FaInstagram className="text-secondary group-hover:text-main inline-flex text-xl" />,
   },
 
   {
     platform: 'GitHub',
     url: 'https://github.com/reydelshit',
-    icon: <IoLogoGithub className="inline-flex text-xl text-secondary group-hover:text-main" />,
+    icon: <IoLogoGithub className="text-secondary group-hover:text-main inline-flex text-xl" />,
   },
 
   {
     platform: 'LinkedIn',
     url: 'https://www.linkedin.com/in/reydel-ocon/',
-    icon: <TiSocialLinkedin className="text-xl text-secondary group-hover:text-main" />,
+    icon: <TiSocialLinkedin className="text-secondary group-hover:text-main text-xl" />,
   },
 ];
 const Hero = ({ theme }: { theme: string }) => {
   return (
-    <section className="flex justify-between md:gap-2 h-fit md:items-center items-start ">
+    <section className="flex h-fit items-start justify-between md:items-center md:gap-2">
       <div className="w-[80%]">
-        <h1 className="font-bold text-lg md:text-3xl">Reydel Ocon</h1>
-        <p className="text-xs md:text-sm leading-[20px] font-family-secondary text-secondary my-1 text-wrap w-full">
-          Experienced Full Stack Developer with a strong background in building scalable web
-          applications — and the last <strong>Airbender</strong>. I primarily work with React,
-          TypeScript, and Node.js, focusing on delivering high-quality, user-friendly solutions.
+        <h1 className="text-lg font-bold md:text-3xl">Reydel Ocon</h1>
+        <p className="font-family-secondary text-secondary my-1 w-full text-xs leading-[20px] text-wrap md:text-sm">
+          Experienced Full Stack Developer with a strong background in building scalable web applications — and the last{' '}
+          <strong>Airbender</strong>. I primarily work with React, TypeScript, and Node.js, focusing on delivering
+          high-quality, user-friendly solutions.
         </p>
         <span className="text-accent text-[10px] md:text-xs">Gensan, Philippines</span>
-        <div className=" mt-2">
+        <div className="mt-2">
           {SocialLinks.map((link, index) => (
             <a
-              className="group inline-flex mr-1 w-8 h-8 justify-center items-center ring-[0.5px] ring-accent rounded-md p-0.5 cursor-pointer hover:bg-blue-50"
+              className="group ring-accent mr-1 inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-md p-0.5 ring-[0.5px] hover:bg-blue-50"
               key={index}
               href={link.url}
               target="_blank"
@@ -56,16 +56,16 @@ const Hero = ({ theme }: { theme: string }) => {
         </div>
       </div>
 
-      <div className="flex md:justify-center justify-end mt-[3rem] md:mt-0">
+      <div className="mt-[3rem] flex justify-end md:mt-0 md:justify-center">
         {theme === 'light' ? (
           <img
-            className="md:w-[100px] md:h-[100px] w-[90px] h-[90px] rounded-full object-cover block "
+            className="block h-[90px] w-[90px] rounded-full object-cover md:h-[100px] md:w-[100px]"
             src={Profile}
             alt="profile_image"
           />
         ) : (
           <img
-            className="md:w-[100px] md:h-[100px] w-[90px] h-[90px] rounded-full object-cover block "
+            className="block h-[90px] w-[90px] rounded-full object-cover md:h-[100px] md:w-[100px]"
             src={AnggDark}
             alt="profile_image"
           />

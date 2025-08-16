@@ -2,20 +2,18 @@ import { EducationDetails } from '@/constants/info';
 
 const Education = () => {
   return (
-    <section className="flex gap-2 h-fit items-start flex-col mt-[2rem]">
-      <h1 className="font-bold text-md  md:text-2xl text-start">Education</h1>
+    <section className="mt-[2rem] flex h-fit flex-col items-start gap-2">
+      <h1 className="text-md text-start font-bold md:text-2xl">Education</h1>
 
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex w-full flex-col gap-2">
         {EducationDetails.map((education, index) => (
           <div key={index}>
-            <div className="flex flex-col md:flex-row justify-between md:items-center mb-1 w-full">
-              <h1 className="font-bold text-sm md:text-md">{education.degree} </h1>
+            <div className="mb-1 flex w-full flex-col justify-between md:flex-row md:items-center">
+              <h1 className="md:text-md text-sm font-bold">{education.degree} </h1>
 
-              <span className="inline-block text-secondary text-xs md:text-sm">
-                {education.duration}
-              </span>
+              <span className="text-secondary inline-block text-xs md:text-sm">{education.duration}</span>
             </div>
-            <p className="text-[14px] leading-[20px] font-family-secondary text-secondary my-1">
+            <p className="font-family-secondary text-secondary my-1 text-[14px] leading-[20px]">
               {education.institution}
             </p>
           </div>

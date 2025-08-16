@@ -23,7 +23,7 @@ export const WorkExperiences = [
   },
   {
     title: 'Chief Technology Officer',
-    company: 'Ommu - Startup Company',
+    company: 'Ommu - Startup',
     type: 'Full-time',
     duration: 'Oct 2024 - June 2025',
     location: 'Gensan, Philippines',

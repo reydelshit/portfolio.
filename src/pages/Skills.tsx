@@ -13,15 +13,15 @@ const SkillsDetails = [
 
 const Skills = ({ theme }: { theme: string }) => {
   return (
-    <section className="flex gap-2 h-fit mt-[2rem] flex-col text-start items-start">
-      <h1 className="font-bold md:text-2xl text-md">Skills</h1>
-      <ul className="list-none flex flex-wrap gap-x-2 gap-y-2 w-full">
+    <section className="mt-[2rem] flex h-fit flex-col items-start gap-2 text-start">
+      <h1 className="text-md font-bold md:text-2xl">Skills</h1>
+      <ul className="flex w-full list-none flex-wrap gap-x-2 gap-y-2">
         {SkillsDetails.map((skill, index) => (
           <li
             key={index}
-            className={`text-xs leading-[20px] font-family-secondary  ${
-              theme === 'dark' ? 'bg-white text-main' : 'bg-neutral-800 text-gray-300'
-            } px-2 rounded-md md:text-sm  `}
+            className={`font-family-secondary text-xs leading-[20px] ${
+              theme === 'dark' ? 'text-main bg-white' : 'bg-neutral-800 text-gray-300'
+            } rounded-md px-2 md:text-sm`}
           >
             {skill}
           </li>
