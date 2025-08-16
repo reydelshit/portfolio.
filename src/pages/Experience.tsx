@@ -3,7 +3,7 @@ import { WorkExperiences } from '@/constants/info';
 const Experience = () => {
   return (
     <section className="mt-[2rem] flex h-fit flex-col items-start gap-2">
-      <div className="flex w-full flex-col sm:flex-row sm:justify-between">
+      <div className="flex w-full justify-between">
         <h1 className="text-md text-start font-bold md:text-2xl">Work Experience</h1>
 
         <a target="_blank" href="/resume.pdf" className="text-secondary cursor-pointer text-xs underline md:text-sm">
