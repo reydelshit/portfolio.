@@ -19,7 +19,7 @@ export const WorkExperiences = [
     duration: 'Dec 2024 - Present',
     location: 'Remote',
     responsibilities:
-      'Designed and developed a dynamic website for students interested in STEM education, implemented user-friendly interfaces and interactive features to enhance the learning experience, and collaborated with stakeholders to align development goals with educational objectives.',
+      'Developed a dynamic website for students interested in STEM education, implemented user-friendly interfaces and interactive features to enhance the learning experience, and collaborated with stakeholders to align development goals with educational objectives.',
   },
   {
     title: 'Chief Technology Officer',
