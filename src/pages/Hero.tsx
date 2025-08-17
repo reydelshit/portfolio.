@@ -36,7 +36,7 @@ const Hero = ({ theme }: { theme: string }) => {
       <div className="w-[80%]">
         <h1 className="text-lg font-bold md:text-3xl">Reydel Ocon</h1>
         <p className="font-family-secondary text-secondary my-1 w-full text-xs leading-[20px] text-wrap md:text-sm">
-          Experienced Full Stack Developer with a strong background in building scalable web applications — and the last{' '}
+          A passionate Software Developer with a strong background in building scalable web applications — and the last{' '}
           <strong>Airbender</strong>. I primarily work with React, TypeScript, and Node.js, focusing on delivering
           high-quality, user-friendly solutions.
         </p>
