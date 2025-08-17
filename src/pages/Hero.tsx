@@ -26,7 +26,7 @@ const SocialLinks = [
 
   {
     platform: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/reydel-ocon/',
+    url: 'https://www.linkedin.com/in/reydelocon/',
     icon: <TiSocialLinkedin className="text-secondary group-hover:text-main text-xl" />,
   },
 ];
