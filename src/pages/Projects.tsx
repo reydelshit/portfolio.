@@ -37,9 +37,25 @@ const Projects = () => {
 
   if (loading)
     return (
-      <div className="flex h-[300px] items-center justify-center py-4">
-        <p>Loading pinned repos...</p>
-      </div>
+      <section className="mt-[2rem] flex h-fit flex-col items-start gap-4">
+        <div className="w-full">
+          <div className="flex w-full items-center justify-between">
+            <h1 className="text-md font-bold md:text-2xl">Projects </h1>
+
+            <span className="text-secondary mt-5 block text-xs">only pinned repos are shown here.</span>
+          </div>
+          <div className="w-[60%]">
+            <p className="text-secondary text-xs text-wrap">
+              Some projects are not disclosed due to signed non-disclosure agreements (NDAs).
+            </p>
+            <span className="text-end text-xs font-semibold">More projects: github.com/reydelshit</span>
+          </div>
+        </div>
+
+        <div className="flex h-[300px] items-center justify-center">
+          <p>Loading pinned repos...</p>
+        </div>
+      </section>
     );
   if (error) return <p>Error: {error}</p>;
 
