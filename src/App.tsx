@@ -5,6 +5,7 @@ import Experience from './pages/Experience';
 import Footer from './pages/Footer';
 import Hero from './pages/Hero';
 import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
@@ -16,16 +17,16 @@ function App() {
   };
   return (
     <main
-      className={`h-fit w-full flex justify-center p-4 md:pt-8 font-family-main relative ${
-        theme === 'dark' ? 'text-white' : 'text-main '
+      className={`font-family-main relative flex h-fit w-full justify-center p-4 md:pt-8 ${
+        theme === 'dark' ? 'text-white' : 'text-main'
       } `}
     >
       <div className="fixed top-4 right-4 z-50">
         {theme === 'light' ? (
           <button className="cursor-pointer" onClick={toggleDarkMode} type="button">
-            <span className="group inline-flex shrink-0 justify-center items-center size-9">
+            <span className="group inline-flex size-9 shrink-0 items-center justify-center">
               <svg
-                className="shrink-0 size-4"
+                className="size-4 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -42,9 +43,9 @@ function App() {
           </button>
         ) : (
           <button className="cursor-pointer" type="button" onClick={toggleDarkMode}>
-            <span className="group inline-flex shrink-0 justify-center items-center size-9">
+            <span className="group inline-flex size-9 shrink-0 items-center justify-center">
               <svg
-                className="shrink-0 size-4"
+                className="size-4 shrink-0"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -70,19 +71,18 @@ function App() {
         )}
       </div>
 
-      {theme === 'light' ? (
-        <div className="fixed top-0 -z-10 h-full w-full bg-white">
-          <div className="fixed bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"></div>
-        </div>
-      ) : (
-        <div className="fixed top-0 -z-10 h-full w-full bg-neutral-900">
-          <div className="fixed bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.6)] opacity-60 blur-[80px]"></div>
-        </div>
-      )}
-      <div className="max-w-[672px] mx-auto relative z-10">
+      <div className={`fixed top-0 -z-10 h-full w-full ${theme === 'light' ? 'bg-white' : 'bg-neutral-900'}`}>
+        <div
+          className={`fixed top-0 right-0 bottom-auto left-auto h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full blur-[80px] ${
+            theme === 'light' ? 'bg-[rgba(173,109,244,0.5)] opacity-50' : 'bg-[rgba(173,109,244,0.6)] opacity-60'
+          }`}
+        />
+      </div>
+      <div className="relative z-10 mx-auto max-w-[672px]">
         <Hero theme={theme} />
         <About />
         <Experience />
+        <Projects />
         <Education />
         <Skills theme={theme} />
         <Footer />
