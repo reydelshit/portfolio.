@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+=======
+
+.env
+.env
+>>>>>>> 6ff75a4 (fix: remove .env from commit)
