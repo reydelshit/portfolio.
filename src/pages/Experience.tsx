@@ -7,7 +7,7 @@ const Experience = () => {
         <h1 className="text-md text-start font-bold md:text-2xl">Work Experience</h1>
 
         <a
-          href="/static/resume.pdf"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-secondary cursor-pointer text-xs underline md:text-sm"
