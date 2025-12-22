@@ -12,7 +12,7 @@ const Experience = () => {
           rel="noopener noreferrer"
           className="text-secondary cursor-pointer text-xs underline md:text-sm"
         >
-          view resume🔗
+          view resume 🔗
         </a>
       </div>
 
