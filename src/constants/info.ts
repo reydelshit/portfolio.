@@ -16,7 +16,7 @@ export const WorkExperiences = [
     title: 'Full Stack Developer',
     company: 'Stemed LLC',
     type: 'Independent Contractor',
-    duration: 'Dec 2024 - December 2025',
+    duration: 'Dec 2024 - November 2025',
     location: 'Remote',
     responsibilities:
       'Developed a dynamic website for students interested in STEM education, implemented user-friendly interfaces and interactive features to enhance the learning experience, and collaborated with stakeholders to align development goals with educational objectives.',
