@@ -12,6 +12,15 @@ export const EducationDetails = [
 ];
 
 export const WorkExperiences = [
+{
+  title: 'MIS Assistant',
+  company: 'Stellar Seeds Corp',
+  type: 'Full-time',
+  duration: 'March 2026 - June 2026',
+  location: 'Office',
+  responsibilities:
+    'Developed and maintained web-based information systems and internal tools supporting day-to-day organizational operations, managed and organized operational data to improve accuracy, accessibility, and reporting, provided technical support and troubleshooting for software and computer-related issues, and collaborated with different departments to understand operational requirements and implement technology-based solutions.',
+},
   {
     title: 'Full Stack Developer',
     company: 'Stemed LLC',
